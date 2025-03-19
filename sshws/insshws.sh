@@ -2,7 +2,7 @@
 # Proxy For Edukasi & Imclass
 
 # Link Hosting Kalian
-repo="https://raw.githubusercontent.com/Tomketstore/tunneling/main/"
+repo="https://raw.githubusercontent.com/liontunnel/script/main/"
 
 wget -O /usr/local/bin/ws-dropbear ${repo}sshws/ws-dropbear
 chmod +x /usr/local/bin/ws-dropbear
