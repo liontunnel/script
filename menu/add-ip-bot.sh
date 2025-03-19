@@ -30,7 +30,7 @@ MYIP=$(curl -sS ipv4.icanhazip.com)
 ipsaya=$(wget -qO- ipinfo.io/ip)
 data_server=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 date_list=$(date +"%Y-%m-%d" -d "$data_server")
-data_ip="https://raw.githubusercontent.com/FanoraSsh/iz/main/admin"
+data_ip="https://raw.githubusercontent.com/liontunnel/iz/main/admin"
 checking_sc() {
   useexp=$(wget -qO- $data_ip | grep $ipsaya | awk '{print $3}')
   if [[ $date_list < $useexp ]]; then
@@ -44,8 +44,8 @@ checking_sc() {
     echo -e "   \033[0;33mVPS KAMU${NC} $ipsaya \033[0;33mBUKAN RESELLER${NC}"
     echo -e "     \033[0;33mBELI LICENCE RESELLER SCRIPT${NC}"
     echo -e "             \033[0;33mContact Admin :${NC}"
-    echo -e "      \033[0;36mTelegram${NC} t.me/FanoraSsh"
-    echo -e "      ${c}WhatsApp${NC} wa.me/62********"
+    echo -e "      \033[0;36mTelegram${NC} t.me/FanoraVpnTunnel"
+    echo -e "      ${c}WhatsApp${NC} wa.me/6287835373265"
     echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
     sleep 5
     exit
@@ -54,7 +54,7 @@ checking_sc() {
 checking_sc
 
 TOKEN="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"
-REPO="https://github.com/FanoraSsh/iz.git"
+REPO="https://github.com/liontunnel/iz.git"
 EMAIL="hesaceza476@gmail.com"
 USER="FanoraSsh"
 
@@ -112,7 +112,7 @@ git init &> /dev/null
 git add . &> /dev/null
 git commit -m register &> /dev/null
 git branch -M main &> /dev/null
-git remote add origin https://github.com/FanoraSsh/iz
+git remote add origin https://github.com/liontunnel/iz
 git push -f https://${TOKEN}@github.com/${USER}/iz.git &> /dev/null
 rm -rf /root/iz
 clear
@@ -137,7 +137,7 @@ TEXT="
 <b>Succes Create this IP</b>
 <code>◇━━━━━━━━━━━━━━◇</code>
 <i>Tunggu 5Menit Untuk Server KeRefresh</i>
-<b><i>Terima Kasih Sudah Menggunakan Script By Fanora</i></b>
+<b><i>Terima Kasih Sudah Menggunakan Script By FanoraVpnTunnel</i></b>
 curl -s --max-time 10 -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null"
 clear
 lane
