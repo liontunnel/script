@@ -10,7 +10,7 @@ WH='\033[1;37m'
 ipsaya=$(curl -s -4 icanhazip.com)
 data_server=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 date_list=$(date +"%Y-%m-%d" -d "$data_server")
-data_ip="https://raw.githubusercontent.com/FanoraSsh/permission/main/ip"
+data_ip="https://raw.githubusercontent.com/liontunnel/permission/main/ip"
 checking_sc() {
 useexp=$(curl -sS $data_ip | grep $ipsaya | awk '{print $3}')
 if [[ $date_list < $useexp ]]; then
@@ -24,7 +24,7 @@ echo -e "$COLOR1┌────────────────────�
 echo -e "$COLOR1│            ${RED}PERMISSION DENIED !${NC}                  $COLOR1│"
 echo -e "$COLOR1│   ${yl}Your VPS${NC} $ipsaya \033[0;36mHas been Banned${NC}      $COLOR1│"
 echo -e "$COLOR1│     ${yl}Buy access permissions for scripts${NC}          $COLOR1│"
-echo -e "$COLOR1│             \033[0;32mContact Me @Fanorassh ${NC}                 $COLOR1│"
+echo -e "$COLOR1│             \033[0;32mContact Me @FanoraVpnTunnel ${NC}                 $COLOR1│"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 exit
 fi
