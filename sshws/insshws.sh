@@ -10,8 +10,8 @@ chmod +x /usr/local/bin/ws-dropbear
 # Installing Service
 cat > /etc/systemd/system/ws-nontls.service << END
 [Unit]
-Description=Python Proxy Mod By FREETUNNEL
-Documentation=https://t.me/abecasdee13
+Description=Python Proxy Mod By FANORATUNNEL
+Documentation=https://t.me/FanoraVpnTunnel
 After=network.target nss-lookup.target
 
 [Service]
@@ -38,8 +38,8 @@ chmod +x /usr/local/bin/ws-ovpn
 # Installing Service
 cat > /etc/systemd/system/ws-ovpn.service << END
 [Unit]
-Description=Python Proxy Mod By FREETUNNEL
-Documentation=https://t.me/abecasdee13
+Description=Python Proxy Mod By FANORATUNNEL
+Documentation=https://t.me/FanoraVpnTunnel
 After=network.target nss-lookup.target
 
 [Service]
@@ -65,8 +65,8 @@ chmod +x /usr/local/bin/ws-stunnel
 # Installing Service
 cat > /etc/systemd/system/ws-stunnel.service << END
 [Unit]
-Description=Python Proxy Mod By FREETUNNEL
-Documentation=https://t.me/abecasdee13
+Description=Python Proxy Mod By FANORATUNNEL
+Documentation=https://t.me/FanoraVpnTunnel
 After=network.target nss-lookup.target
 
 [Service]
